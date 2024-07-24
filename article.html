@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+   <link rel="stylesheet" href="css/lightgallery.css">
+   <link rel="stylesheet" href="css/air-datepicker.min.css">
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+   <script src="js/ahunter_suggest.js"></script>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="icon" href="img/favicon.png" sizes="32x32">
+   <title>Статься текст</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+   <div class="header__top">
+      <div class="header__top-body container" id="headerTopBody">
+         <div class="header__menu menu">
+            <button class="menu__icon">
+               <span class="burger-line"></span>
+               <span class="burger-line"></span>
+               <span class="burger-line"></span>
+               <span>Меню</span>
+            </button>
+         </div>
+         <nav class="header__navigation navigation" id="header__navigation">
+            <ul class="navigation__list">
+               <li><a href="about.html" class="navigation__link">О компании</a></li>
+               <li><a href="vacancies.html" class="navigation__link">Вакансии</a></li>
+               <li><a href="news.html" class="navigation__link">Новости</a></li>
+               <li><a href="contacts.html" class="navigation__link">Контакты</a></li>
+            </ul>
+         </nav>
+         <div class="header__contacts">
+            <div class="header__contact">
+               <div class="header__contact-icon">
+                  <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <use xlink:href="img/svg/sprite.svg#mail"></use>
+                  </svg>
+               </div>
+               <div class="header__contact-links">
+                  <a href="mailto:info@standart-express.ru">info@standart-express.ru</a>
+                  <span>Выполняем заказы: 24/7</span>
+               </div>
+            </div>
+            <div class="header__contact">
+               <div class="header__contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                     <use xlink:href="img/svg/sprite.svg#telephone"></use>
+                  </svg>
+               </div>
+               <div class="header__contact-links">
+                  <a href="tel:88007005153">8 (800) 700-51-53</a>
+                  <a href="tel:+79652265790">+7 (965) 226-57-90</a>
+               </div>
+            </div>
+         </div>
+         <div class="header__socials">
+            <a href="" class="header__whatsapp">
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path
+                     d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232">
+                  </path>
+               </svg>
+            </a>
+            <a href="" class="header__telegram">
+               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18"
+                  viewBox="0 0 100 100" version="1.1" xml:space="preserve" style="transform: translate(-1px,0px);">
+                  <g id="Layer_2">
+                     <path class="st117"
+                        d="M88.723,12.142C76.419,17.238,23.661,39.091,9.084,45.047c-9.776,3.815-4.053,7.392-4.053,7.392    s8.345,2.861,15.499,5.007c7.153,2.146,10.968-0.238,10.968-0.238l33.62-22.652c11.922-8.107,9.061-1.431,6.199,1.431    c-6.199,6.2-16.452,15.975-25.036,23.844c-3.815,3.338-1.908,6.199-0.238,7.63c6.199,5.246,23.129,15.976,24.082,16.691    c5.037,3.566,14.945,8.699,16.452-2.146c0,0,5.961-37.435,5.961-37.435c1.908-12.637,3.815-24.321,4.053-27.659    C97.307,8.804,88.723,12.142,88.723,12.142z">
+                     </path>
+                  </g>
+               </svg>
+            </a>
+         </div>
+         <div class="header__callme">
+            <button class="orange-button open-callback-popup">Перезвоните мне</button>
+         </div>
+         <div class="header__location">
+            <div class="header__location-tel">
+               <a href="tel:88007005153">8 (800) 700-51-53</a>
+            </div>
+            <span class="header__location-span">Ваш город</span>
+            <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <use xlink:href="img/svg/sprite.svg#loc-arrow"></use>
+            </svg>
+            <button class="open-city-popup"><span>Санкт - Петербург</span></button>
+         </div>
+      </div>
+   </div>
+
+   <div class="header__bottom">
+      <div class="header__bottom-body container" id="headerBottomBody">
+         <div class="header__bottom-logo" id="logo">
+            <a href="index.html">
+               <img src="img/svg/logo-icon.svg" alt="Logo icon">
+               <img src="img/svg/logo-text.svg" alt="Logo text">
+            </a>
+         </div>
+         <nav class="header__bottom-menu secondary-menu">
+            <ul class="secondary-menu__list">
+               <li><a href="gruzchiki.html" class="secondary-menu__link">Грузчики</a></li>
+               <li><a href="pereezd.html" class="secondary-menu__link">Переезды</a></li>
+               <li><a href="takelaj.html" class="secondary-menu__link">Такелажные работы</a></li>
+               <li><a href="gruzoperevozki.html" class="secondary-menu__link">Грузоперевозки</a></li>
+               <li><a href="ranorabochie.html" class="secondary-menu__link">Разнорабочие</a></li>
+               <li><a href="yuridicheskim-litcam.html" class="secondary-menu__link">Юридическим лицам</a></li>
+            </ul>
+         </nav>
+      </div>
+   </div>
+
+   <div class="header__main-menu main-menu">
+      <div class="main-menu__aside">
+         <div class="main-menu__aside-body" id="main-menu__aside-body">
+            <div class="main-menu__city">
+               <span>Ваш город</span>
+               <button class="open-city-popup">
+                  <img src="img/svg/loc-arrow-white.svg" alt="">
+                  <span>Москва</span>
+               </button>
+            </div>
+            <div class="main-menu__logo">
+               <img src="img/svg/logo-icon.svg" alt="Logo icon">
+               <img src="img/svg/logo-text.svg" alt="Logo text">
+            </div>
+            <div class="main-menu__contacts">
+               <div class="main-menu__contact">
+                  <div class="main-menu__contact-icon">
+                     <img src="img/svg/telephone.svg" alt="">
+                  </div>
+                  <div>
+                     <a href="tel:88007005153" class="main-menu_contact-link">8 (800) 700-51-53</a>
+                     <a href="tel:+79652265790" class="main-menu_contact-link">+7 (965) 226-57-90</a>
+                  </div>
+               </div>
+               <div class="main-menu__contact">
+                  <div class="main-menu__contact-icon">
+                     <img src="img/svg/headphones.svg" alt="">
+                  </div>
+                  <div>
+                     <p class="main-menu_contact-link">Принимаем звонки ежедневно <br> с 8:00 до 20:00 (по МСК)</p>
+                  </div>
+               </div>
+               <div class="main-menu__contact">
+                  <div class="main-menu__contact-icon">
+                     <img src="img/svg/mail.svg" alt="">
+                  </div>
+                  <div>
+                     <a href="mailto:info@standart-express.ru"
+                        class="main-menu_contact-link">info@standart-express.ru</a>
+                  </div>
+               </div>
+               <div class="main-menu__contact">
+                  <div class="main-menu__contact-icon">
+                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/svg/sprite.svg#clock"></use>
+                     </svg>
+                  </div>
+                  <div>
+                     <p class="main-menu__contact-link">Выполняем заказы: 24/7</p>
+                  </div>
+               </div>
+            </div>
+            <div class="main-menu__socials">
+               <a href="" class="main-menu__social">
+                  <div class="main-menu__social-icon">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-whatsapp" viewBox="0 0 16 16">
+                        <path
+                           d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                     </svg>
+                  </div>
+                  <span>WhatsApp</span>
+               </a>
+               <a href="" class="main-menu__social">
+                  <div class="main-menu__social-icon">
+                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18"
+                        height="18" viewBox="0 0 100 100" version="1.1" xml:space="preserve"
+                        style="transform: translate(-1px,0px);">
+                        <g id="Layer_2">
+                           <path class="st117"
+                              d="M88.723,12.142C76.419,17.238,23.661,39.091,9.084,45.047c-9.776,3.815-4.053,7.392-4.053,7.392    s8.345,2.861,15.499,5.007c7.153,2.146,10.968-0.238,10.968-0.238l33.62-22.652c11.922-8.107,9.061-1.431,6.199,1.431    c-6.199,6.2-16.452,15.975-25.036,23.844c-3.815,3.338-1.908,6.199-0.238,7.63c6.199,5.246,23.129,15.976,24.082,16.691    c5.037,3.566,14.945,8.699,16.452-2.146c0,0,5.961-37.435,5.961-37.435c1.908-12.637,3.815-24.321,4.053-27.659    C97.307,8.804,88.723,12.142,88.723,12.142z" />
+                        </g>
+                     </svg>
+                  </div>
+                  <span>Telegram</span>
+               </a>
+            </div>
+            <div class="main-menu__recall">
+               <button class="orange-button open-callback-popup">Перезвоните мне</button>
+            </div>
+            <div class="main-menu__policy">
+               <a href="">Политика конфиденциальности</a>
+               <a href="">Пользовательское соглашение</a>
+               <p>© 2024 Стандарт Экспресс. Все права защищены</p>
+            </div>
+         </div>
+      </div>
+      <div class="main-menu__body">
+         <nav class="main-menu__nav">
+            <div class="main-menu__item">
+               <div class="main-menu__title">
+                  <img src="img/svg/menu-icon-1.svg" alt="Service icon">
+                  <a href="">Грузчики</a>
+                  <span class="main-menu__title-arrow">
+                     <img src="img/svg/chevron-down.svg" alt="">
+                  </span>
+               </div>
+               <div class="main-menu__links">
+                  <a href="">Подъем/спуск на этаж</a>
+                  <a href="">Стоимость грузчиков</a>
+                  <a href="">Вывоз мусора/материалов</a>
+                  <a href="">Грузчики на производство</a>
+                  <a href="">Грузчики на разовую работу</a>
+                  <a href="">Грузчики на погрузочно-
+                     разгрузочные работы</a>
+               </div>
+            </div>
+
+            <div class="main-menu__item">
+               <div class="main-menu__title">
+                  <img src="img/svg/menu-icon-2.svg" alt="Service icon">
+                  <a href="">РАЗНОРАБОЧИЕ</a><span class="main-menu__title-arrow">
+                     <img src="img/svg/chevron-down.svg" alt="">
+                  </span>
+               </div>
+               <div class="main-menu__links">
+                  <a href="">Уборка территории</a>
+                  <a href="">Разнорабочие на стройку</a>
+                  <a href="">Рытье траншей и ям</a>
+                  <a href="">Уборка листьев</a>
+                  <a href="">Уборка снега</a>
+               </div>
+            </div>
+
+            <div class="main-menu__item">
+               <div class="main-menu__title">
+                  <img src="img/svg/menu-icon-3.svg" alt="Service icon">
+                  <a href="">ФИЗИЧЕСКИМ ЛИЦАМ</a><span class="main-menu__title-arrow">
+                     <img src="img/svg/chevron-down.svg" alt="">
+                  </span>
+               </div>
+               <div class="main-menu__links">
+                  <a href="">Перевозка вещей</a>
+                  <a href="">Перевозка мебели</a>
+                  <a href="">Перевозка бытовой техники</a>
+                  <a href="">Вывоз строительного мусора</a>
+                  <a href="">Перевозка мебели на дачу</a>
+                  <a href="">Упаковка мебели</a>
+                  <a href="">Перевозка холодильника</a>
+               </div>
+            </div>
+
+            <div class="main-menu__item">
+               <div class="main-menu__title">
+                  <img src="img/svg/menu-icon-4.svg" alt="Service icon">
+                  <a href="">ГРУЗОПЕРЕВОЗКИ</a><span class="main-menu__title-arrow">
+                     <img src="img/svg/chevron-down.svg" alt="">
+                  </span>
+               </div>
+               <div class="main-menu__links">
+                  <a href="">Доставка и экспедирование грузов</a>
+                  <a href="">Городские перевозки</a>
+                  <a href="">Доставка по городу</a>
+                  <a href="">Междугородние</a>
+                  <a href="">Негабаритные</a>
+                  <a href="">Газель для перевозки мебели</a>
+                  <a href="">Перевозка строительных материалов</a>
+               </div>
+            </div>
+
+            <div class="main-menu__item">
+               <div class="main-menu__title">
+                  <img src="img/svg/menu-icon-5.svg" alt="Service icon">
+                  <a href="">ПЕРЕЕЗД</a><span class="main-menu__title-arrow">
+                     <img src="img/svg/chevron-down.svg" alt="">
+                  </span>
+               </div>
+               <div class="main-menu__links">
+                  <a href="">Переезд под ключ</a>
+                  <a href="">Переезд Газелью</a>
+                  <a href="">Квартирный переезд</a>
+                  <a href="">Переезд дома/коттеджа</a>
+                  <a href="">Дачный переезд</a>
+                  <a href="">Хранение вещей</a>
+                  <a href="">Газель для междугородних перевозок</a>
+               </div>
+            </div>
+
+            <div class="main-menu__item">
+               <div class="main-menu__title">
+                  <img src="img/svg/menu-icon-6.svg" alt="Service icon">
+                  <a href="">ОФИСНЫЙ ПЕРЕЕЗД</a><span class="main-menu__title-arrow">
+                     <img src="img/svg/chevron-down.svg" alt="">
+                  </span>
+               </div>
+               <div class="main-menu__links">
+                  <a href="">Газель для междугородних перевозок</a>
+                  <a href="">Упаковка хрупких вещей</a>
+               </div>
+            </div>
+
+            <div class="main-menu__item">
+               <div class="main-menu__title">
+                  <img src="img/svg/menu-icon-7.svg" alt="Service icon">
+                  <a href="">ЮРИДИЧЕСКИМ ЛИЦАМ</a><span class="main-menu__title-arrow">
+                     <img src="img/svg/chevron-down.svg" alt="">
+                  </span>
+               </div>
+               <div class="main-menu__links">
+                  <a href="">Транспортным компаниям</a>
+                  <a href="">Аутсорсинг персонала</a>
+                  <a href="">Складские работы</a>
+                  <a href="">Маркировочные работы</a>
+               </div>
+            </div>
+
+            <div class="main-menu__item">
+               <div class="main-menu__title">
+                  <img src="img/svg/menu-icon-7.svg" alt="Service icon">
+                  <a href="">ТАКЕЛАЖНЫЕ РАБОТЫ</a><span class="main-menu__title-arrow">
+                     <img src="img/svg/chevron-down.svg" alt="">
+                  </span>
+               </div>
+               <div class="main-menu__links">
+                  <a href="">Промышленный такелаж</a>
+                  <a href="">Перевозка банкоматов</a>
+                  <a href="">Такелаж оборудования и станков</a>
+                  <a href="">Перевозка сейфов и железной
+                     мебели</a>
+                  <a href="">Перевозка пианино и рояля</a>
+                  <a href="">Такелаж оборудования</a>
+                  <a href="">Такелаж медицинского оборудования</a>
+                  <a href="">Такелаж станков</a>
+               </div>
+            </div>
+         </nav>
+         <div class="main-menu__close">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <use xlink:href="img/svg/sprite.svg#close"></use>
+            </svg>
+         </div>
+      </div>
+   </div>
+
+</header>
+      <main>
+         <section class="article">
+            <div class="article__body container">
+               <h1 class="article__title title">Как перевозить холодильник?</h1>
+
+               <div class="article__content">
+                  <div class="article__sidebar">
+                     <div class="article__sidebar-body">
+                        <nav>
+                           <a href="#part1" class="article__sidebar-link active">Как перевозить холодильник после
+                              покупки?</a>
+                           <a href="#part2" class="article__sidebar-link">Упаковка и подготовка холодильников к
+                              перевозке</a>
+                           <a href="#part3" class="article__sidebar-link">Можно ли перевозить холодильник на боку или
+                              лёжа?</a>
+                           <a href="#part4" class="article__sidebar-link">Как крепить холодильник в автомобиле?</a>
+                           <a href="#part5" class="article__sidebar-link">Перемещение холодильника вручную</a>
+                        </nav>
+                     </div>
+                  </div>
+                  <article class="article__text">
+                     <div class="article__info">
+                        <span class="blog__date">01.03.2023</span>
+                        <span class="blog__rating">
+                           <img src="img/svg/Star.svg" alt="star icon">
+                           <span>4,8/5</span>
+                        </span>
+                     </div>
+                     <div class="article__image">
+                        <img src="img/blog/Maskgroup.png" alt="blog image">
+                     </div>
+                     <div class="article__full-text">
+                        <p>
+                           Холодильник является крупногабаритной бытовой техникой, и его перевозка должна осуществляться
+                           по
+                           особенным правилам.
+                           Невзирая на то, что холодильник внешне выглядит прочно и монолитно, в действительности, он
+                           очень
+                           хрупкий. При небольшом
+                           несоблюдении условий перевозки может произойти его повреждение. А так как, не все хозяева
+                           холодильников в курсе данной
+                           проблемы, то при перевозке зачастую происходят поломки.
+                        </p>
+                        <p>
+                           Каким образом правильно производится перевозка и переноска холодильников будет освещено в
+                           данной
+                           статье. Принцип
+                           действия холодильников, по большому счёту, одинаков, однако не стоит пренебрегать
+                           конструктивными особенностями всех
+                           холодильников.
+                        </p>
+                        <p>
+                           И в каждой инструкции, которая прилагается к оборудованию очень доходчиво описано как
+                           правильно
+                           осуществляется перевозка
+                           определённого холодильника. Однако, общие правила перевозки одинаковые.
+                        </p>
+                        <h2 id="part1">Как перевозить холодильник после покупки?</h2>
+                        <p>
+                           Изготовители холодильного оборудования обязуют перевозить его в вертикальном положении стоя.
+                           В
+                           данной ситуации не
+                           осуществляется перемешивание фреона с маслом. В том случае, когда покупатель хочет перевезти
+                           холодильник сам, но на
+                           горизонтальной стороне холодильника, тогда продавец моментально должен снять гарантию.
+                        </p>
+                        <p>
+                           Необходимо обязательно <a href="">перевозить бытовую технику</a> в заводской коробке,
+                           защищающей
+                           корпус холодильника. Машины, в которых
+                           нужно перевозить габаритную технику, обязаны быть обустроены крепёжными элементами в кузове,
+                           и
+                           перевозить необходимо
+                           стоя в вертикальном положении, а не горизонтальной стороной вниз.
+                        </p>
+                        <p>
+                           Рекомендуется после истечения гарантийного термина не выбрасывать заводскую упаковку. Она
+                           может
+                           понадобиться, когда
+                           нужно будет перевезти холодильник следующий раз.
+                        </p>
+                        <h3 id="part3">Можно ли перевозить холодильник на боку или лёжа?</h3>
+                        <p>
+                           В соответствии с инструкцией, перевозить и переносить холодильные устройства необходимо
+                           вертикально стоя, однако, так
+                           как холодильник достаточно большого размера, то это не всегда получается, и перевозка
+                           холодильника на боку или лёжа
+                           допускается в горизонтальной плоскости. В данной ситуации, необходимо тщательно изучить знаки
+                           на
+                           упаковке, и понять,
+                           какими сторонами можно укладывать холодильник, когда планируется его перевезти,
+                           горизонтальной
+                           или вертикальной
+                           сторонами.
+                        </p>
+                        <p>
+                           Возможно ли перевозить холодильник на боку, лучше спросить во время приобретения, когда
+                           первый
+                           раз планируется перевезти
+                           его. В ситуации, когда доставку производит магазин, его работники выполняют основное правило
+                           –
+                           лёжа перевозить нельзя,
+                           только в вертикальном положении.
+                        </p>
+                        <p>Изготовители холодильников не рекомендуют перевозить холодильник лёжа на боку по следующим
+                           причинам:</p>
+                        <ol>
+                           <li>
+                              Могут повредиться двери и ручки при перевозке в положении лёжа. Возможно холодильник
+                              станет
+                              не таким герметичным, когда
+                              будет произведена перевозка холодильника. Лёжа на дверцах нельзя производить перевозку;
+                           </li>
+                           <li>Возможно масло перемешается с фреоном, если холодильник будет находиться в лежачем
+                              положении;</li>
+                           <li>
+                              Нарушения рабочих частей холодильников. Такие, как закрепления компрессора, патрубка, а
+                              также
+                              может разорваться
+                              электропровод;
+                           </li>
+                           <li>Возможно соскакивание пружин;</li>
+                           <li>Продавливание теплоизоляции.</li>
+                        </ol>
+                        <p>
+                           Лёжа на боку, вне зависимости на каком боку, есть вероятность появления повреждений.
+                           Минимизировать риски возможно,
+                           определившись, где находится нагнетательная трубка, исходящая из компрессора. При перевозке в
+                           лежачем положении
+                           необходимо, чтоб данная трубка располагалась в верхней части. Тогда масло может не попасть в
+                           контур. Когда будет
+                           выполнена перевозка, необходимо установить холодильник, и не подключать его более 4 часов,
+                           дать
+                           маслу стечь.
+                        </p>
+                        <p>
+                           И ещё одна рекомендация. Не стоит производить наклон холодильников при перевозке более чем на
+                           45
+                           градусов. И, если
+                           производить наклон холодильников, когда производиться перевозка, то в сторону мотора. А
+                           холодильники, работающие по
+                           системе «ноу фрост», в обязательном порядке перевозить в вертикальном положении.
+                        </p>
+                        <h4 id="part4">Как крепить холодильник в автомобиле?</h4>
+                        <p>
+                           Основной целью при перевозке холодильников в любом положении должно быть их фиксирование, и
+                           исключение передвижения
+                           холодильников в кузове при перевозке. Чаще всего для закрепления холодильников применяются
+                           различные специальные
+                           приспособления для крепления габаритной техники.
+                        </p>
+                        <p>
+                           Если используются различные опоры для фиксирования холодильников, тогда необходимо произвести
+                           добавочную защиту в местах
+                           соприкосновения холодильников и опор. Немаловажным при перевозке является то, что под
+                           холодильник необходимо проложить
+                           подкладку, для более мягкой перевозки, а также гашения вибрации и предотвращения передвижения
+                           холодильников по кузову во
+                           время перевозки. Желательно, чтобы фиксация была очень жёсткой.
+                        </p>
+                        <h5 id="part5">Перемещение холодильника вручную</h5>
+                        <p>
+                           Когда перевозка выполнена, требуется перенести и установить холодильник. Как правило,
+                           переноска
+                           холодильников
+                           осуществляется минимум двумя людьми.
+                        </p>
+                        <p>При переноске холодильников желательно использовать такелажные ремни, и необходимо соблюдать
+                           следующие правила:</p>
+                        <ol>
+                           <li>Перенос холодильников должен осуществляться очень осторожно;</li>
+                           <li>Не стаскивать холодильник с кузова машины;</li>
+                           <li>Не укладывать себе на спину;</li>
+                           <li>Желательно использовать специальные подъёмные механизмы;</li>
+                           <li>
+                              Переноска должна осуществляться в вертикальном положении стоя, и компрессор должен
+                              находиться
+                              в нижней части. По
+                              утверждённым условиям перемещения холодильники перевозить нужно в положении вертикально;
+                           </li>
+                           <li>Не нести, держась за двери и ручки холодильников.</li>
+                        </ol>
+                        <p>
+                           У большинства нынешних холодильников присутствуют колёса, с помощью которые можно их катить
+                           по
+                           ровному месту, немного
+                           наклоняя холодильник. Таким образом возможно переместить холодильник на улице или в квартире.
+                        </p>
+                        <p>
+                           Установив холодильник на место, где он будет стоять постоянно, необходимо дать холодильнику
+                           принять температурные
+                           параметры помещения. Если перевозка холодильников осуществляется зимой, желательно, чтобы
+                           холодильник «отогрелся»
+                           минимум 5 часов, а лучше, если холодильник постоит не включенным более 8 часов. Требуется
+                           осмотреть холодильник, и если
+                           есть какая-то влага, то просушить холодильник, как изнутри, так и снаружи.
+                        </p>
+                     </div>
+                  </article>
+               </div>
+            </div>
+         </section>
+
+         <div class="other-articles">
+            <div class="other-articles__body container">
+               <p class="other-articles__title title">Другие статьи</p>
+               <div class="blogs__content">
+                  <div class="blogs__item blog">
+                     <div class="blog__image">
+                        <img src="img/blog/1.png" alt="blog image">
+                     </div>
+                     <div class="blog__details">
+                        <div class="blog__info">
+                           <span class="blog__date">01.03.2023</span>
+                           <p class="blog__rating">
+                              <img src="img/svg/Star.svg" alt="star icon">
+                              <span>4,8/5</span>
+                           </p>
+                        </div>
+                        <a href="article.html" class="blog__name">Как перевозить холодильник?</a>
+                        <p class="blog__description">Холодильник является крупногабаритной бытовой техникой, и его
+                           перевозка должна осуществляться по особенным правилам.</p>
+                     </div>
+                     <div class="blog__link">
+                        <a href="article.html" class="orange-button">Читать далее</a>
+                     </div>
+                  </div>
+                  <div class="blogs__item blog">
+                     <div class="blog__image">
+                        <img src="img/blog/1.png" alt="blog image">
+                     </div>
+                     <div class="blog__details">
+                        <div class="blog__info">
+                           <span class="blog__date">01.03.2023</span>
+                           <p class="blog__rating">
+                              <img src="img/svg/Star.svg" alt="star icon">
+                              <span>4,8/5</span>
+                           </p>
+                        </div>
+                        <a href="article.html" class="blog__name">Как перевозить холодильник?</a>
+                        <p class="blog__description">Холодильник является крупногабаритной бытовой техникой, и его
+                           перевозка должна осуществляться по особенным правилам.</p>
+                     </div>
+                     <div class="blog__link">
+                        <a href="article.html" class="orange-button">Читать далее</a>
+                     </div>
+                  </div>
+                  <div class="blogs__item blog">
+                     <div class="blog__image">
+                        <img src="img/blog/1.png" alt="blog image">
+                     </div>
+                     <div class="blog__details">
+                        <div class="blog__info">
+                           <span class="blog__date">01.03.2023</span>
+                           <p class="blog__rating">
+                              <img src="img/svg/Star.svg" alt="star icon">
+                              <span>4,8/5</span>
+                           </p>
+                        </div>
+                        <a href="article.html" class="blog__name">Как перевозить холодильник?</a>
+                        <p class="blog__description">Холодильник является крупногабаритной бытовой техникой, и его
+                           перевозка должна осуществляться по особенным правилам.</p>
+                     </div>
+                     <div class="blog__link">
+                        <a href="article.html" class="orange-button">Читать далее</a>
+                     </div>
+                  </div>
+                  <div class="blogs__item blog">
+                     <div class="blog__image">
+                        <img src="img/blog/1.png" alt="blog image">
+                     </div>
+                     <div class="blog__details">
+                        <div class="blog__info">
+                           <span class="blog__date">01.03.2023</span>
+                           <p class="blog__rating">
+                              <img src="img/svg/Star.svg" alt="star icon">
+                              <span>4,8/5</span>
+                           </p>
+                        </div>
+                        <a href="article.html" class="blog__name">Как перевозить холодильник?</a>
+                        <p class="blog__description">Холодильник является крупногабаритной бытовой техникой, и его
+                           перевозка должна осуществляться по особенным правилам.</p>
+                     </div>
+                     <div class="blog__link">
+                        <a href="article.html" class="orange-button">Читать далее</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="bookmark">
+            <div class="bookmark__body container">
+               <div class="bookmark__text">
+                  Чтобы не потерять наш сайт добавьте его в избранное (закладки) или сохраните
+               </div>
+               <div class="bookmark__button">
+                  <span>Нажмите сочетание <br> клавиш в браузере</span>
+                  <button disabled>Ctrl + D</button>
+               </div>
+            </div>
+         </div>
+         <!-- ПОПАПЫ -->
+         <div class="city-popup popup" id="city-popup">
+            <div class="popup__wrapper">
+               <div class="popup__content city__content">
+                  <p class="city__title">Мы работаем в следующих городах</p>
+                  <form action="" class="city__form">
+                     <div class="city__form-item">
+                        <input type="text" id="address_city" placeholder="Введите название города">
+                        <button type="submit">
+                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <use xlink:href="img/svg/sprite.svg#search"></use>
+                           </svg>
+                        </button>
+                     </div>
+                  </form>
+                  <div class="city__links">
+                     <a href="" class="active">Москва</a>
+                     <a href="">Санкт-Петербург</a>
+                     <a href="">Нижний Новгород</a>
+                     <a href="">Екатеринбург</a>
+                     <a href="">Казань</a>
+                     <a href="">Краснодар</a>
+                     <a href="">Ростов-на-Дону</a>
+                     <a href="">Воронеж</a>
+                     <a href="">Курск</a>
+                     <a href="">Саратов</a>
+                     <a href="">Ярославль</a>
+                     <a href="">Орехово-Зуево</a>
+                     <a href="">Белгород</a>
+                  </div>
+                  <div class="popup__close">
+                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/svg/sprite.svg#close"></use>
+                     </svg>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="callback-popup popup" id="callback-popup">
+            <div class="popup__wrapper">
+               <div class="popup__content callback-popup__content">
+                  <p class="callback-popup__title">Заказать консультацию</p>
+                  <form action="" class="callback-popup__form">
+                     <div class="callback-popup__form-items">
+                        <input type="text" class="input" placeholder="Имя" required>
+                        <input type="tel" class="input tel-mask" placeholder="Телефон" required>
+                     </div>
+                     <button type="submit" class="orange-button">
+                        Отправить
+                     </button>
+                  </form>
+                  <!-- СООБЩЕНИЕ СПАСИБО -->
+                  <!-- добавить класс show для показа-->
+                  <div class="thanks">
+                     <div class="thanks__message">
+                        <p>Спасибо!</p>
+                        <p>Менеджер перезвонит вам в ближайшее время</p>
+                     </div>
+                  </div>
+                  <!--  -->
+                  <div class="popup__close">
+                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/svg/sprite.svg#close"></use>
+                     </svg>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- ПОПАПЫ -->
+      </main>
+      <!--FOOTER start  -->
+      <footer class="footer">
+   <div class="footer__top">
+      <div class="footer__top-body container">
+         <div class="footer__logo">
+            <a href="index.html">
+               <img src="img/svg/logo-icon.svg" alt="Logo icon">
+               <img src="img/svg/logo-text.svg" alt="Logo text">
+            </a>
+         </div>
+         <nav class="footer__menu">
+            <a href="">О компании</a>
+            <a href="">Вакансии</a>
+            <a href="">Новости</a>
+            <a href="">Контакты</a>
+         </nav>
+         <div class="header__contacts">
+            <div class="header__contact">
+               <div class="header__contact-icon">
+                  <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <use xlink:href="img/svg/sprite.svg#mail"></use>
+                  </svg>
+               </div>
+               <div class="header__contact-links footer-mail">
+                  <a href="mailto:info@standart-express.ru">info@standart-express.ru</a>
+                  <span>Выполняем заказы: 24/7</span>
+               </div>
+            </div>
+            <div class="header__contact">
+               <div class="header__contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                     <use xlink:href="img/svg/sprite.svg#telephone"></use>
+                  </svg>
+               </div>
+               <div class="header__contact-links footer-tel">
+                  <a href="tel:88007005153">8 (800) 700-51-53</a>
+                  <a href="tel:+79652265790">+7 (965) 226-57-90</a>
+                  <p>Принимаем звонки ежедневно <br> с 8:00 до 20:00 (по МСК)</p>
+               </div>
+            </div>
+         </div>
+         <div class="header__callme">
+            <button class="orange-button open-callback-popup">Перезвоните мне</button>
+         </div>
+      </div>
+   </div>
+   <div class="footer__bottom">
+      <div class="footer__bottom-body container">
+         <div class="footer__copyright">© 2024 Стандарт Экспресс. Все права защищены</div>
+         <div class="footer__policy">
+            <a href="" class="">Политика конфиденциальности</a>
+            <a href="" class="">Пользовательское соглашение</a>
+         </div>
+         <div class="footer__info">
+            <span>ООО «Стандарт Экспресс»</span>
+            <span>ОГРН 1141690046871ИНН</span>
+            <span>1657143487</span>
+         </div>
+      </div>
+   </div>
+</footer>
+      <!--Footer end  -->
+   </div>
+   <script src="js/swiper-bundle.min.js"></script>
+   <script src="js/lightgallery.min.js"></script>
+   <script src="js/air-datepicker.min.js"></script>
+   <script src="https://unpkg.com/imask"></script>
+   <script src="js/app.js"></script>
+</body>
+
+</html>
